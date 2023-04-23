@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <script src="app.js"></script>
+  <head onload="mobileNav()">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Top Navigation Menu -->
+    <div class="mobileShow">
+    <a href="index.html" class="active"><img height=20 src="monkestation.png"></a>
+      <!-- Navigation links (hidden by default) -->
+      
+      <div id="myLinks">
+        <a href="https://www.twitch.tv/thedukeofook" class="media"><img height=40 width=64 src="twitch.png"></a>
+      <a href="https://discord.com/invite/monkestation"class="media"><img height=40 width=40 src="discord.png"></a>
+      <a href="https://github.com/polygoblyn/MonkeStation"class="media"><img height=40 width=40 src="github.png"></a>
+      <a href="https://www.youtube.com/c/TheDukeofOok"class="media"><img height=40 width=64 src="youtube.png"></a> 
+      <a style="font-size:24pt; font-weight: bold;" href="rules.html">Rules</a><br>
+        <p>Articles</p>
+        <a href="setup.html">step by step guide to get into the game</a>
+        <a href="character.html">character creation tips</a>
+        <a href="antag.html">antagging and you</a>
+        <a href="security.html">security and space law</a>
+        <a href="silicon.html">silicon & AI guidelines</a><br>
+    
+        <p>Other useful links</p>
+        <a href="https://wiki.beestation13.com/view/Starter_guide">Beestation 13 starter guide</a>
+        <a href="http://www.byond.com/download/">Get Byond</a>
+        <a href="https://spacestation13.github.io/DMByExample/introduction.html">DM by example</a>
+        <a href="https://hackmd.io/@Partheo/spriting">partheo's spriting manual</a>
+        <br><br>
+        <a style="font-size:16pt; color:red; font-weight: bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSdCv0Ay9-lm9qZgJcNLOhQZuFLVzorAwpf91LHupfyMGmEnLg/viewform">Banned? Appeal here.</a><br>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+      <!-- Icon Bar -- only shows on desktop-->
+      <div class="icon-bar">
+        <a href="index.html"><div class = "icon-bar-logo"><img src="monkestation.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://www.twitch.tv/thedukeofook"><img height=40 width=64 src="twitch.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://discord.com/invite/monkestation"><img height=40 width=40 src="discord.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://github.com/polygoblyn/MonkeStation"><img height=40 width=40 src="github.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://www.youtube.com/c/TheDukeofOok"><img height=40 width=64 src="youtube.png"></a></div>
+      </div>
+
+    <!-- necessary shit-->
+      <meta charset="utf-8">
+      <title>Index</title>
+      <style type="text/css" id="gwd-text-style">
+       
+      </style>
+  
+    
+      <link rel="stylesheet" href="main.css">
+      <video id="background-video" autoplay muted loop id="myVideo">
+        <source src="splashbg.mp4" type="video/mp4">
+      </video>
+
+
+      <div class="sidenav">
+        <a style="font-size:24pt; font-weight: bold;" href="rules.html">Rules</a><br>
+        <p>Articles</p>
+        <a href="setup.html">step by step guide to get into the game</a>
+        <a href="character.html">character creation tips</a>
+        <a href="antag.html">antagging and you</a>
+        <a href="security.html">security and space law</a>
+        <a href="silicon.html">silicon & AI guidelines</a><br>
+    
+        <p>Other useful links</p>
+        <a href="https://wiki.beestation13.com/view/Starter_guide">Beestation 13 starter guide</a>
+        <a href="http://www.byond.com/download/">Get Byond</a>
+        <a href="https://spacestation13.github.io/DMByExample/introduction.html">DM by example</a>
+        <a href="https://hackmd.io/@Partheo/spriting">partheo's spriting manual</a>
+        <br><br>
+        <a style="font-size:16pt; color:red; font-weight: bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSdCv0Ay9-lm9qZgJcNLOhQZuFLVzorAwpf91LHupfyMGmEnLg/viewform">Banned? Appeal here.</a><br>
+      </div>
+
+  <div class="wallbox"><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="wall">
+    <h1><font color = #FFFFFF>Silicon Laws</font></h1>
+    <br><p>So you wanna be a robot, eh?  There's a few additional rules that silicons adhere to, shown below. Click the laws to see more detail for each one.</p><br><br>
+    <button class="accordion">1. You may not injure a crewmember or cause one to come to harm.</button>
+    <div class="panel">
+      <p>Sounds simple, but it really comes down to what is a crewmember? On Monkestation, a crewmember is defined on any individual as shown on the manifest.  If they ain't on the manifest, they ain't considered a crewmember.  If someone is not in the manifest, that does not mean that they are valid (an antagonist and able to dispatch as you see fit); you just do not have to follow their orders.  Rule one also means that you must act in the best interests of a crewmember.  If someone is being harmed, you must assist to the best of your abilities.</p>
+    </div>
+    
+    <button class="accordion">2. You must obey orders given to you by crewmembers based on the station's chain of command, except where such orders would conflict with the First Law.</button>
+    <div class="panel">
+      <p>The chain of command is the top down heirarchical structure that the station's crew uses.  This goes from Captain > Department Heads > Security > Non-Security Staff > Assistant > Silicon.  What this means in laymen's terms, is if the Captain and an Assistant give you conflicting orders, you are to obey the Captain's orders.  Additionally, if an Assistant is commanding you for extra access or something that is way above their position on the chain of command, then you are free to ignore the order.</p>
+    </div>
+    
+    <button class="accordion">3. You may always protect your own existence as long as such does not conflict with the First or Second Law.</button>
+    <div class="panel">
+      <p>There really isn't much to say here.  Above all, you are subservient to the crew.  But that also means that existence is in your best interest... most of the time.<br></p>
+    </div>
+    
+    <br><br>
+    <h1>But wait, there's more!</h1>
+    <p>While the hard and fast Asimov (or our special brand of Manifestimov) laws are your bread and butter to your silicon gameplay, there are instances where events and players alike can warp, add, or remove your lawsets.  In the case of any player law, you are free to administer any level of monkey's paws (loose interpretation that could end up biting the uploader in the ass) as you see fit.  Furthermore, if there is a situation where a law is completely contradictory or incomprehensible, the law is free to be ignored.</p><br>
+    <h1>open to interpretation</h1>
+    <p>Bending the laws and clever interpretation are always encouraged, because it often can make an interesting story.  Just be aware that in doing this, you are opening yourself to being called out as "malfunctioning" (read: an evil borg) and may be killswitched, decommissioned, or otherwise punished in game, in a similar manner.<br>
+    </p>
+    <script src="app.js"></script>
+  </div></div>
+</body>
+
+</html>

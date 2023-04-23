@@ -1,0 +1,429 @@
+* {box-sizing: border-box}
+
+@font-face {
+  font-family: "Comic-Sans";
+  src: url("fonts/comic-sans.woff2") format("woff2"),
+       url("fonts/comic-sans.woff") format("woff");
+}
+p {
+  margin: 0px;
+  font-size: 14pt;
+  color: white;
+  font-family: "Comic-Sans", sans-serif;
+}
+
+h1 {
+  font-size: 20pt;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: "Comic-Sans", sans-serif;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.wallscroll {
+  margin:4px, 4px;
+  padding:4px;
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+  border: #fff;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+.wallbox{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 200px;
+  padding: 36px;
+  float:right
+}
+.wall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #091114e7;
+  color: white;
+  width: 100%;
+  padding: 36px;
+ }
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: rgb(55, 42, 58);
+  overflow: auto; /* Overflow due to float */
+  align-items: right;
+  opacity: 1;
+  position: fixed;
+}
+.icon-bar-logo
+{
+  width: 72%;
+  float:left;
+  padding: 12px 0;
+}
+
+.icon-bar-button {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 7%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px ; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+  height: 75px;
+}
+
+
+.active {
+  background-color: #9e23bd; /* Add an active/current color */
+}
+
+.hidden {
+  display: none;
+}
+/*style the container*/
+.container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #302431;
+  width: 30%;
+  height: 550px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  color: rgb(216, 208, 208);
+  padding: 15px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 50px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(148, 78, 180, 0.479);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #091114;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(216, 208, 208);
+  
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  overflow-y: scroll;
+  padding: 16px 16px;
+  color: rgb(216, 208, 208);
+  background-color: #091114e7;
+  width: 70%;
+  border-left: none;
+  height: 550px;
+  text-align: left;
+  visibility: visible;
+  -webkit-animation: fadeIn .5s;
+  animation: fadeIn .5s;
+ 
+
+  
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: .5;}
+  to {opacity:1 ;}
+}
+/* Tooltip container */
+.tooltipcontainer{
+  position: relative;
+  display: inline-block;
+  white-space: inherit;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color:rgb(184, 111, 212);
+  font-size: 14pt;
+  white-space: nowrap;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+
+  
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  background: rgb(55, 42, 58);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(55, 42, 58);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #091114e7;
+  margin: 10px 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidenav {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 150px;
+  left: 10px;
+  background-color: #091114e7;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color:rgb(184, 111, 212);
+  display: block;
+  font-family: "Comic-Sans", sans-serif;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 250px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/*ACCORDION//
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #302431;
+  color: rgb(184, 111, 212);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  font-size: 20px;
+  font-family: serif;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #302431;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #302431;
+  display: none;
+  overflow: hidden;
+}
+
+p {
+  margin: 0px;
+  font-size: 12pt;
+  color: rgb(216, 208, 208);
+}
+a {
+  margin: 0px;
+  font-size: 12pt;
+  color:rgb(117, 73, 158);
+  font-style: normal;
+  text-decoration: none;
+}
+a:hover{
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+html,
+body {
+  margin: 0px;
+}
+
+body {
+  background-image: none;
+  background-color: rgb(0, 0, 0);
+  left: 0%;
+  top: 0%;
+}
+
+.mobileShow {display: none;}
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){ 
+    .mobileShow {display: inline;}
+    .icon-bar {display:none;}
+    .sidenav {display:none;}
+    .wallbox{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-top: 0px;
+      padding: 36px;
+      float:none;}
+      .container{
+        width: 90%;
+      }
+}
+
+/*FOR MOBILE NAV*/
+
+/* Style the navigation menu */
+.mobileShow {
+  overflow: hidden;
+  background-color: #091114e7;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.mobileShow #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.mobileShow a {
+  color: rgb(184, 111, 212);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: "Comic-Sans", sans-serif;
+}
+
+/* Style the hamburger menu */
+.mobileShow a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.mobileShow a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgb(55, 42, 58);
+  color: white;
+}
+.media{
+  float:left;
+  width: 25%;
+  align-self: center;
+  background-color:#302431;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+  <script src="app.js"></script>
+  <head onload="mobileNav()">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Top Navigation Menu -->
+    <div class="mobileShow">
+    <a href="index.html" class="active"><img height=20 src="monkestation.png"></a>
+      <!-- Navigation links (hidden by default) -->
+      
+      <div id="myLinks">
+        <a href="https://www.twitch.tv/thedukeofook" class="media"><img height=40 width=64 src="twitch.png"></a>
+      <a href="https://discord.com/invite/monkestation"class="media"><img height=40 width=40 src="discord.png"></a>
+      <a href="https://github.com/polygoblyn/MonkeStation"class="media"><img height=40 width=40 src="github.png"></a>
+      <a href="https://www.youtube.com/c/TheDukeofOok"class="media"><img height=40 width=64 src="youtube.png"></a> 
+      <a style="font-size:24pt; font-weight: bold;" href="rules.html">Rules</a><br>
+        <p>Articles</p>
+        <a href="setup.html">step by step guide to get into the game</a>
+        <a href="character.html">character creation tips</a>
+        <a href="antag.html">antagging and you</a>
+        <a href="security.html">security and space law</a>
+        <a href="silicon.html">silicon & AI guidelines</a><br>
+    
+        <p>Other useful links</p>
+        <a href="https://wiki.beestation13.com/view/Starter_guide">Beestation 13 starter guide</a>
+        <a href="http://www.byond.com/download/">Get Byond</a>
+        <a href="https://spacestation13.github.io/DMByExample/introduction.html">DM by example</a>
+        <a href="https://hackmd.io/@Partheo/spriting">partheo's spriting manual</a>
+        <br><br>
+        <a style="font-size:16pt; color:red; font-weight: bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSdCv0Ay9-lm9qZgJcNLOhQZuFLVzorAwpf91LHupfyMGmEnLg/viewform">Banned? Appeal here.</a><br>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+      <!-- Icon Bar -- only shows on desktop-->
+      <div class="icon-bar">
+        <a href="index.html"><div class = "icon-bar-logo"><img src="monkestation.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://www.twitch.tv/thedukeofook"><img height=40 width=64 src="twitch.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://discord.com/invite/monkestation"><img height=40 width=40 src="discord.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://github.com/polygoblyn/MonkeStation"><img height=40 width=40 src="github.png"></a></div>
+        <div class ="icon-bar-button"><a href="https://www.youtube.com/c/TheDukeofOok"><img height=40 width=64 src="youtube.png"></a></div>
+      </div>
+
+    <!-- necessary shit-->
+      <meta charset="utf-8">
+      <title>Index</title>
+      <style type="text/css" id="gwd-text-style">
+       
+      </style>
+  
+    
+      <link rel="stylesheet" href="main.css">
+      <video id="background-video" autoplay muted loop id="myVideo">
+        <source src="splashbg.mp4" type="video/mp4">
+      </video>
+
+
+      <div class="sidenav">
+        <a style="font-size:24pt; font-weight: bold;" href="rules.html">Rules</a><br>
+        <p>Articles</p>
+        <a href="setup.html">step by step guide to get into the game</a>
+        <a href="character.html">character creation tips</a>
+        <a href="antag.html">antagging and you</a>
+        <a href="security.html">security and space law</a>
+        <a href="silicon.html">silicon & AI guidelines</a><br>
+    
+        <p>Other useful links</p>
+        <a href="https://wiki.beestation13.com/view/Starter_guide">Beestation 13 starter guide</a>
+        <a href="http://www.byond.com/download/">Get Byond</a>
+        <a href="https://spacestation13.github.io/DMByExample/introduction.html">DM by example</a>
+        <a href="https://hackmd.io/@Partheo/spriting">partheo's spriting manual</a>
+        <br><br>
+        <a style="font-size:16pt; color:red; font-weight: bold;" href="https://docs.google.com/forms/d/e/1FAIpQLSdCv0Ay9-lm9qZgJcNLOhQZuFLVzorAwpf91LHupfyMGmEnLg/viewform">Banned? Appeal here.</a><br>
+      </div>
+
+      <body onload="openRule(event, '01')">
+  <div class="container"><br><br><br><br><br><br><br><br><br>
+    <img src="rules.gif" class="center"><br><br>
+  <div class="tab">
+    <button class="tablinks" onclick="openRule(event, '01')">1. Don't Be a Jerk</button>
+    <button class="tablinks" onclick="openRule(event, '02')">2. Stay in Your Lane</button>
+    <button class="tablinks" onclick="openRule(event, '03')">3. No Sexual Content</button>
+    <button class="tablinks" onclick="openRule(event, '04')">4. No Metagaming</button>
+    <button class="tablinks" onclick="openRule(event, '05')">5. Streamer Rules</button>
+    <button class="tablinks" onclick="openRule(event, '06')">6. No Self-Antagonizing</button>
+    <button class="tablinks" onclick="openRule(event, '07')">7. The Lowpop Clause</button>
+    <button class="tablinks" onclick="openRule(event, '08')">8. No Validhunting</button>
+    <button class="tablinks" onclick="openRule(event, '09')">9. Escalation is Required</button>
+    <button class="tablinks" onclick="openRule(event, '10')">10. Naming Policy</button>
+      <button class="tablinks" onclick="openRule(event, '11')">11. Admins Have the Final Say</button>
+  </div>
+  <div id="01" class="tabcontent">
+    <p>
+      This server has a zero tolerance policy for bigotry.<br><br>
+      
+      This includes racism, sexism, and homophobia, including in-character versions of it.
+      Any usage of slurs, or methods to get around the filters is prohibited.
+      Outside of that, we encourage you to treat your fellow spaceman with respect.<br><br>
+      
+      Preferably, no talk of IRL political events should happen either.
+      Our station is supposed to be a fun place: Light hearted, goofy and full of farts.<br><br><br><br>
+
+    
+      <h1 style="color:rgb(216, 208, 208)"><b>Click each rule to see more information!</b></h1></p><br><br>
+    <p></p>
+    </div>
+  <div id="02" class="tabcontent">
+    <p>Do not do the job of another unless the department is unstaffed, requests assistance or is otherwise incapacitated.<br><br>
+    
+    Breaking into medbay storage, stealing supplies and just treating yourself does not provide interaction between players.
+    Rushing into engineering to silently snatch up the gloves and tools deprives the rest of the engineers the equipment
+    they need to survive.
+    Making weaponry and zipties just for the sake of hunting down antagonists makes security redundant.<br><br>
+    
+    Play as the job you chose, or get the Head of Personnel/Captain to change it.
+    Communicate for equipment if you need it.<br><br>
+  
+    MonkeStation is a server that promotes social interaction and has a number of newer players that are learning the roles
+    themselves.
+    Remember that you were new at one point as well, give them a chance to actually play and enjoy this game as well.</p>
+  </div>
+  <div id="03" class="tabcontent">
+    <p>Monkestation is not a place for sexual content of any sort.
+    This includes erotic role-play, sexual copypasta, references to genitalia and sexual acts.<br><br>
+    
+    There are other servers for that.
+  </p>
+  </div>
+  <div id="04" class="tabcontent">
+    <p>Out of game communications, cliques that mysteriously show up to silently save someone and usage of out of game
+    information such as a stream to discover antagonist status are not permitted.
+    However, we highly encourage teaching friends as we know SS13 is a very difficult game.
+    Should you need to use out of game communications for that purpose, we simply ask that you make an adminhelp during
+    rounds that you are teaching someone this way. Give the name of the person/people you are teaching in the adminhelp.<br><br>
+    
+    Metagrudging is the act of acting upon previous round info, such as refusing to heal someone because they were an
+    antagonist last round.<br>
+    <b>This is not permitted.</b><br><br>
+    
+    Do not speak about current round information in the OOC chat channel.
+    </p>
+  </div>
+  <div id="05" class="tabcontent">
+    <p>Monkestation is a streamer friendly server, with very minor rules for those that wish to stream here.
+    No stream delay is required.<br><br>
+    
+    Metaknowledge is not permitted, chat members must not inform the streamer of things they could not have known.
+    It's fine to point something out so long as it was visible on stream.</p>
+  </div>
+  <div id="06" class="tabcontent">
+    <p>We know the face of this station definitely is in the gray area of this rule.
+    Committing small crimes and building dangerous machines breathes life into an otherwise mundane round.
+    Just do not cross the line into murder, theft of major items or destruction.<br><br>
+    
+    If you're ever wondering your gimmick is leaning too far into self antag territory, consider if you're negatively
+    effecting another player's round.
+    You can also adminhelp if you want our opinion on it as well. Coming to us willingly will be treated better than if we
+    had to bwoink you.<br><br>
+    </p>
+  </div>
+  <div id="07" class="tabcontent">
+    <p>Lowpop hours are a time for learning.<br>
+    You are especially discouraged from self antagging and otherwise impeding other peoples experiences when the server's
+    population is below 10.<br>
+    On most very low-pop rounds, antagonists will not be spawning in general.</p>
+  </div>
+  <div id="08" class="tabcontent">
+    <p>If you are not security, avoid vigilantism.
+    Defending yourself is fine, but making your entire round goal to chase down and hunt the antagonists is not.<br><br>
+    
+    This also excludes a solid RP reason (within the round) for seeking revenge.
+    A clown who has had their shoes stolen by security, a chef continually getting harassed by assistants or a doctor that
+    keeps getting shoved by crew as they work all have reasons to fight back.<br><br>
+    
+    If there is a large-scale threat to the station, anyone is encouraged to participate in protecting the station.
+    Large-scale threats are: Nuclear Operatives, Blobs, Xenomorphs and Wizards.</p>
+  </div>
+<div id="09" class="tabcontent">
+  <p>Whether you are an antagonist or not, you must have some form of escalation for killing/wounding people and causing
+  destruction.
+  We are an RP server and silently dispatching your target is rarely interesting for anyone, so ensure you interact with
+  them in some form.
+  Your job as an antagonist is to make the round interesting rather than go for objectives. Be creative, admins will often
+  assist with gimmicks.<br><br>
+  
+  Actively murdering an excessive amount of people outside of your objectives is not permitted, except if you are a
+  Nuclear Operative, Blob, Xenomorph or Wizard.
+  In cases where you are forced to defend yourself against aggression against yourself, that is permitted so long as you
+  aren't obviously baiting for kills.</p>
+</div>
+<div id="10" class="tabcontent">
+  <p>On MonkeStation, we have a very light policy around names that should still allow you to be creative or humorous if you
+  so desire.<br>
+  Names must not be references to any people that were politically relevant, figures that were involved in major real-life
+  criminality, or be references to anything that would otherwise break rules 1 and 3.
+  Examples of unacceptable names: "George Floyd", "Jeffery Epstein", "Bonerfart The Clown"<br><br>
+  
+  References to video games, shows, movies, books, or other fictional creations are perfectly acceptable so long as they
+  would not break other rules.</p>
+</div>
+<div id="11" class="tabcontent">
+  <p>Above all else, if an admin is telling you to stop doing something, stop doing it. Claiming "It's not in the rules!",
+  arguing, and rules lawyering is not going to help your situation in the event of an admin PM. Additionally, dragging an
+  admin's decision into other channels (Twitch, Discord) will not help your case and can result in additional time banned.<br><br>
+  
+  Also please remember: Admins are not omniscient or omnipresent: while they have a large arsenal of tools at their
+  disposal to stop rule breakers, they aren't able to stop something before it happens. Please use the Adminhelp feature
+  (F1) to report any rule breaking! Even if it's just a gut suspicion, its fine to just use this feature to have them
+  check it out.<br><br>
+  
+  In lieu of this, please remember that admins are there for rules enforcement, not players. Please report and move on; do
+  not antagonize the perpetrator in either In Character(IC) or Out Of Character(OOC) regarding the report; this doesn't
+  help anyone, regardless of whether or not they're breaking the rules. Additionally, dogpiling is not cool. Let the
+  admins take care of stuff.</p>
+</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+</body>
+
+</html>
